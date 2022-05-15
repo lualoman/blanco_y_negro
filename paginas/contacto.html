@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curseros - Contactanos</title>
+    <link rel="stylesheet" href="../css/estilos.css"/>
+</head>
+
+<body class="body__contacto">
+    <header class="header__contacto">
+        <h1 class="header__titulo">CONTACTO</h1>
+        <nav class="header__navegacion">
+            <ul class="ul__navegacion">
+                <li><a href="../index.html">Menu Principal</a></li>
+                <li><a href="sobre-nosotrxs.html">Sobre Nosotrxs</a></li>
+                <li><a href="partituras.html">Partituras</a></li>
+                <li><a href="obras.html">Obras</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- FORMULARIO DE INSCRIPCION -->
+    <main class="flex__contacto gridContacto">
+        <section class="gridCuno">
+            <form class="flex__contacto Form">
+                <p>Forma parte de nuestra comunidad</p>
+
+                <div>
+                    <label for="Nombre"></label>
+                    <input type="text" value="Nombre"/>
+                </div>
+
+                <div>
+                    <label for="Apellido"></label>
+                    <input type="text" value="Apellido"/>
+                </div>
+
+                <div>
+                    <label for="E-mail"></label>
+                    <input type="text" value="e-mail"/>
+                </div>
+
+                <div>
+                    <p>
+                        ¿Recibir Newsletter?
+                        <label for="check"></label>
+                        <input type="checkbox" name="newsletter" value="check"></input>
+                    </p>
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar" action="post" />
+                </div>
+            </form>
+        </section>
+        
+        <!-- ESPACIO PARA COMENTARIOS -->
+        <section class="flex__contacto Comentarios gridCdos">
+            <p>¿Sugerencias? ¡Ayudanos a mejorar!</p>
+            
+            <textarea name="textarea" rows="10" cols="30">Comparte aquí tu opinion</textarea>
+            
+            <div>
+                <input type="submit" value="Enviar Comentarios" action="post" />
+            </div>
+        </section>
+
+        <section class="flex__contacto gridCtres">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256875.292115299!2d-68.08344780200369!3d-37.13980333752496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95dc6d0da46936e9%3A0xac1677be5ff258c8!2sLa%20Pampa!5e0!3m2!1ses!2sar!4v1650061084471!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Maps La Pampa</iframe>
+        </section>
+        
+    </main>
+    
+    <div>
+        <h2>¡Gracias por visitar nuestro sitio!</h2>  
+    </div>
+
+    <footer>
+        <p>
+            Todos los derechos reservados.
+        </p>
+    </footer>
+</body>
+</html>

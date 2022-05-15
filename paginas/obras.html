@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilos.css"/>
+</head>
+
+<body class="body__obras">
+    <header class="header__obras">
+        <h1 class="header__titulo">OBRAS</h1>
+        <nav class="header__navegacion">
+            <ul class="ul__navegacion">
+                <li><a href="../index.html">Menu Principal</a></li>
+                <li><a href="sobre-nosotrxs.html">Sobre Nosotrxs</a></li>
+                <li><a href="partituras.html">Partituras</a></li>
+                <li><a href="obras.html">Obras</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main__Obras gridObras">
+        <section class="explicacionObras gridObrasuno">
+            <p>¡En este espacio podes visualizar obras que han interpretado otros usuarixs! Tambien podes compartirnos tu obras y experiencia con la misma. Nuestro foro te espera :D
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ea perspiciatis quia inventore accusamus harum autem officiis repudiandae libero suscipit error reprehenderit debitis, laborum quasi ab, tempora rem quis. Aspernatur.
+                Vero esse quia aliquam enim sed vel nesciunt! Praesentium exercitationem sed commodi. Dolorum ducimus placeat natus laborum facere ea mollitia, ipsum, assumenda voluptates quaerat culpa id, aliquam similique cupiditate deserunt!
+            </p>
+        </section>
+        
+        <div class="imagen__Obras gridObrasdos">      
+            <img src="../recursos/manosypiesenpiano.jpg" alt="imagen de manos en piano" />
+        </div>
+
+        <!-- ESPACIO PARA SUBIR VIDEOS-->
+        <div class="subirVideo gridObrastres">
+            <p>Sube tu video aqui</p>
+            <form enctype="multipart/form-data">
+                <input type="file" name="nuevaInterpretacion"/>
+            </form>
+        </div>
+
+            <!-- COMIENZA SECCION DE VIDEOS DE OTROS USUARIXS --> 
+        <div class="main__ObrasVideos gridObrascuatro">
+            <iframe src="https://www.youtube.com/embed/_fsjNfffknA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <p>¿Que te parece este video? ¡Se parte del foro!</p>
+            <textarea name="textarea">Comparte aquí tu opinion</textarea>
+                        
+            <input type="submit" value="Enviar Comentarios" action="post" />
+        </div>
+
+        <div class="main__ObrasVideos gridObrascinco">
+            <iframe src="https://www.youtube.com/embed/wfF0zHeU3Zs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+            <p>¿Que te parece este video? ¡Se parte del foro!</p>
+            <textarea name="textarea">Comparte aquí tu opinion</textarea>
+                
+            <input type="submit" value="Enviar Comentarios" action="post" />
+        </div>
+
+        <div class="main__ObrasVideos gridObrasseis">
+            <iframe src="https://www.youtube.com/embed/r_5bYNqpEFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <p>¿Que te parece este video? ¡Se parte del foro!</p>  
+            <textarea name="textarea">Comparte aquí tu opinion</textarea>
+            
+            <input type="submit" value="Enviar Comentarios" action="post" />
+        </div>
+        <!-- FINALIZA SECCION DE VIDEOS -->
+    </main>
+
+    <footer class="footer__obras">
+        <p>
+        Todos los derechos reservados.
+        </p>
+    </footer>
+</body>
+</html>
