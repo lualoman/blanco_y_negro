@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- CSS -->
     <link rel="stylesheet" href="css/estilos.css"/>
 </head>
 
 <body class="body__menuPrincipal">
     <header class="header__index">
-        <h1 class="header__titulo"> BLANCO Y NEGRO </h1>
+        <!--<h1 class="header__titulo"> BLANCO Y NEGRO </h1>
         <nav class="header__navegacion">
             <ul class="ul__navegacion">
                 <li><a href="index.html">Menu Principal</a></li>
@@ -19,40 +22,76 @@
                 <li><a href="paginas/obras.html">Obras</a></li>
                 <li><a href="paginas/contacto.html">Contacto</a></li>
             </ul>
+        </nav>-->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Menu Principal</a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Menu Principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="paginas/sobre-nosotrxs.html">Sobre Nosotrxs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="paginas/partituras.html">Partituras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="paginas/obras.html">Obras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="paginas/contacto.html">Contacto</a>
+                </li>
+                </ul>
+                <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="grid__menuPrincipal">
-            <div class="menuPrincipal__texto gridMuno">
-                <p>
-                    ¡Bienvenidxs a la biblioteca de partituras!
-                </p>
-            
-                <p>
-                    Te invitamos a formar parte de nuestra comunidad, ¡un mundo te espera!
-                </p>
+        <section class="container">
+            <article class="row">
+                <div class="col align-self-center">
+                    <p>
+                        ¡Bienvenidxs a la biblioteca de partituras!
+                    </p>
+                
+                    <p>
+                        Te invitamos a formar parte de nuestra comunidad, ¡un mundo te espera!
+                    </p>
 
-                <p>
-                    DE LA PAMPA AL MUNDO
-                </p>
-            </div>
+                    <p>
+                        DE LA PAMPA AL MUNDO
+                    </p>
+                </div>
 
-            <div class="menuPrincipal__imagen gridMdos">
+                <!-- ESTE ES UN VIDEO DE MUESTRA --> 
+                <div class="col">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3K10jhWDTbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>video de youtube</iframe>
+                </div>
+            </article>
+
+            <article class="row">
+                <div class="col">
                     <img src="recursos/piano_keys-t2.jpg" alt="imagen de piano" />
-            </div>
+                </div>
 
-            <!-- ESTE ES UN VIDEO DE MUESTRA --> 
-            <div class="menuPrincipal__iframe gridMtres">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/3K10jhWDTbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>video de youtube</iframe>
-            </div>
-
-            <div class="menuPrincipal__texto derecha gridMcuatro">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat enim veritatis voluptate unde recusandae dolor repudiandae aliquid deserunt, illo dolore nostrum! Officia similique ea tempora reiciendis quas eligendi sed quam?
-                    Nisi nulla inventore facilis dicta possimus veritatis aperiam eveniet. Dolor nulla a facilis vel quae ipsa voluptatum fugit dolores porro perspiciatis, illum deleniti doloremque, deserunt harum accusamus velit.
-                </p>
-            </div>
+                <div class="col align-self-center">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat enim veritatis voluptate unde recusandae dolor repudiandae aliquid deserunt, illo dolore nostrum! Officia similique ea tempora reiciendis quas eligendi sed quam?
+                        Nisi nulla inventore facilis dicta possimus veritatis aperiam eveniet. Dolor nulla a facilis vel quae ipsa voluptatum fugit dolores porro perspiciatis, illum deleniti doloremque, deserunt harum accusamus velit.
+                    </p>
+                </div>
+            </article>
         </section>
     </main>
 
@@ -62,6 +101,8 @@
         </p>
     </footer>
 
+<!-- SCRIPT BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
