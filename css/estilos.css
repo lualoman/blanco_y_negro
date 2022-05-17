@@ -137,12 +137,16 @@ footer {
 /*COMIENZO DE SOBRE NOSOTRXS*/
 
 .body__sobreNos {
-    background-color: rgb(126, 70, 62);
+    background-color: rgb(206, 155, 147);
 }
 
 .header__sobreNos {
     display: flex;
     flex-direction: column;
+}
+
+.bg-pink {
+    background-color: rgb(194, 132, 97);
 }
 
 .gridSobreNos {
@@ -187,6 +191,11 @@ footer {
 
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
+}
+
+.img__piano {
+    height: 400px;
+    width: 600px;
 }
 
 .sobreNos__imagen {
@@ -252,6 +261,10 @@ h3 {
 
 .main__Partituras {
     display: flex;
+}
+
+.bg-babyblue {
+    background-color: rgb(65, 121, 131);
 }
 
 .gridPartituras {
@@ -347,6 +360,13 @@ h3 {
     flex-direction: column;
 }
 
+.bg-purple {
+    background-color: rgb(43, 43, 124);
+}
+
+.link__nav {
+    color: white;
+}
 
 .main__Obras {
     display: flex;
