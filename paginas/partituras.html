@@ -24,73 +24,80 @@
             </ul>
         </nav>-->
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-babyblue">
-            <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#">Partituras</a>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Menu Principal</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="sobre-nosotrxs.html">Sobre Nosotrxs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="partituras.html">Partituras</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="obras.html">Obras</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-                </ul>
-                <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+        
+            <nav class="navbar navbar-expand-lg navbar-light bg-babyblue">
+                <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Partituras</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Menu Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre-nosotrxs.html">Sobre Nosotrxs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="partituras.html">Partituras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="obras.html">Obras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    </ul>
+                    <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+                </div>
+            </nav>
+        </header>
+    
+        <main class="main__Partituras gridPartituras">
+            <section class="main__elegirPartituras gridPuno">
+                <p>Elije el tipo de partitura que deseas interpretar</p>
+                <form>
+                    <select name="partituras">
+                        <option value="tipo_de_partitura" >Tipo de Partitura</option>
+                        <option value="contemporaneas" >Contemporaneas</option>
+                        <option value="clasicas" >Clasicas</option>
+                        <option value="personalizadas" >Perzonalizadas</option>
+                    </select>
                 </form>
-            </div>
-            </div>
-        </nav>
-    </header>
+            </section>
+    
+                <div class="main__partiturasLorem gridPdos">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore quis non necessitatibus quae corporis tempore molestias velit temporibus facilis nobis nulla neque maiores, similique veniam exercitationem eius qui maxime deserunt?
+                        Ad labore excepturi tenetur sit? Optio libero nostrum nam modi quisquam, dignissimos dicta architecto quis iusto voluptate, nesciunt sapiente placeat ratione consequuntur numquam sed perspiciatis deserunt quae quas eligendi nemo.
+                        Placeat similique reiciendis amet velit voluptas odit molestiae dicta necessitatibus? Quasi, quisquam autem voluptatibus illo dolor, consectetur beatae voluptas dolore quibusdam molestias nihil commodi, iste odio! Odit, nobis! Repudiandae, eveniet.
+                        Rem repellendus magnam ut similique veniam harum corrupti animi mollitia beatae quis perspiciatis impedit, nemo iure ipsam id tempore consequuntur odit! Quia, et dolore voluptas laboriosam quisquam voluptatem sapiente maiores.
+                        Fuga inventore obcaecati aspernatur facilis nemo, excepturi corrupti, quis id impedit quasi nesciunt reprehenderit eum dignissimos eveniet saepe maiores soluta accusamus porro officia alias! Consequuntur magnam optio dolorem deserunt nesciunt.
+                    </p>
+                </div>
+    
+                <!-- ESTA SECCION ES, POR EL MOMENTO, SOLO PARA DAR FORMA A LA IDEA DEL PROYECTO --> 
+                <div class="main__nuevaPartitura gridPtres">
+                    <p>Subir nueva partitura a nuestra Biblioteca pública</p>
+                    <form enctype="multipart/form-data">
+                        <input type="file" name="nuevaPartitura"/>
+                    </form>
+                </div>
 
-    <main class="main__Partituras gridPartituras">
-        <section class="main__elegirPartituras gridPuno">
-            <p>Elije el tipo de partitura que deseas interpretar</p>
-            <form>
-                <select name="partituras">
-                    <option value="tipo_de_partitura" >Tipo de Partitura</option>
-                    <option value="contemporaneas" >Contemporaneas</option>
-                    <option value="clasicas" >Clasicas</option>
-                    <option value="personalizadas" >Perzonalizadas</option>
-                </select>
-            </form>
-        </section>
+                <div class="imagen__partituras gridPcuatro">
+                    <img class="img-fluid" src="../recursos/Biblioteca_Barzio.jpg" alt="imagen de biblioteca" />
+                </div>
 
-            <div class="main__partiturasLorem gridPdos">
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore quis non necessitatibus quae corporis tempore molestias velit temporibus facilis nobis nulla neque maiores, similique veniam exercitationem eius qui maxime deserunt?
-                    Ad labore excepturi tenetur sit? Optio libero nostrum nam modi quisquam, dignissimos dicta architecto quis iusto voluptate, nesciunt sapiente placeat ratione consequuntur numquam sed perspiciatis deserunt quae quas eligendi nemo.
-                    Placeat similique reiciendis amet velit voluptas odit molestiae dicta necessitatibus? Quasi, quisquam autem voluptatibus illo dolor, consectetur beatae voluptas dolore quibusdam molestias nihil commodi, iste odio! Odit, nobis! Repudiandae, eveniet.
-                    Rem repellendus magnam ut similique veniam harum corrupti animi mollitia beatae quis perspiciatis impedit, nemo iure ipsam id tempore consequuntur odit! Quia, et dolore voluptas laboriosam quisquam voluptatem sapiente maiores.
-                    Fuga inventore obcaecati aspernatur facilis nemo, excepturi corrupti, quis id impedit quasi nesciunt reprehenderit eum dignissimos eveniet saepe maiores soluta accusamus porro officia alias! Consequuntur magnam optio dolorem deserunt nesciunt.
-                </p>
+        <!--<article class="row">
+            <div class="col">
+                <img class="img-fluid" src="../recursos/biblioteca.png" alt="imagen de biblioteca" />
             </div>
-
-            <!-- ESTA SECCION ES, POR EL MOMENTO, SOLO PARA DAR FORMA A LA IDEA DEL PROYECTO --> 
-            <div class="main__nuevaPartitura gridPtres">
-                <p>Subir nueva partitura a nuestra Biblioteca pública</p>
-                <form enctype="multipart/form-data">
-                    <input type="file" name="nuevaPartitura"/>
-                </form>
-            </div>
-
-            <div class="imagen__partituras gridPcuatro">
-                <img src="../recursos/biblioteca.png" alt="imagen de biblioteca" />
-            </div>
+        </article>-->
     </main>
 
     <footer>

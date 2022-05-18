@@ -47,7 +47,7 @@ footer {
     flex-wrap: wrap;
 
     margin: 10px;
-    padding: 5px;
+    /*padding: 5px;*/
     border: 1px;
     border-color: rgb(124, 90, 27);
     border-style: dashed;
@@ -75,7 +75,7 @@ footer {
     grid-template-areas: "uno dos cuatro"
                         "uno dos cuatro"
                         "uno tres cuatro"
-                        "uno tres cuatro"; 
+                        "uno tres cuatro";
 }
 
 .gridMuno {
@@ -129,6 +129,12 @@ footer {
 .menuPrincipal__iframe {
     display: flex;
     justify-content: center;
+
+    margin: 0px;
+}
+
+.index__paddingfooter {
+    padding: 0px;
 }
 
 
@@ -326,8 +332,8 @@ h3 {
     align-items: center;
 
     /*background-color: rgb(139, 209, 186);*/
-    margin: 20px;
-    padding: 10px;
+    margin: 10px;
+    padding: 5px;
 
     border-color: rgb(65, 121, 131);
     border-style: groove;
@@ -339,6 +345,8 @@ h3 {
     display: flex;
 
     padding: 10px;
+    height: auto;
+    width: 300px;
 }
 
 .imagen__partituras:hover{
@@ -377,9 +385,11 @@ h3 {
 
 .gridObras {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 0.25fr 0.25fr 0.25fr;
     grid-template-areas: "uno uno seis"
                         "tres tres seis"
-                        "cuatro cinco dos"  ;
+                        "cuatro cinco dos";
 }
 
 .gridObrasuno {
@@ -435,9 +445,8 @@ h3 {
     flex-direction: column;
     align-items: center;
 
-    margin: 30px;
-    padding: 10px;
-    height: 80px;
+    padding: 1rem;
+    height: 25vh;
 
     border-style: dashed;
     color: white;
@@ -453,7 +462,7 @@ h3 {
     flex-direction: column;
 
     color: white;
-    margin: 15px;
+    margin: 1rem;
     padding: 10px;
 
     /*background-color: rgb(71, 39, 17);*/
@@ -515,8 +524,8 @@ h3 {
     border-style: double;
     border-color: rgb(76, 121, 121);
 
-    margin: 20px;
-    padding: 10px;
+    margin: 1rem;
+    padding: 1rem;
 
     border-top-left-radius: 25px;
 
@@ -529,8 +538,8 @@ h3 {
     color: white;
     background-color: rgb(8, 44, 68);
 
-    margin: 20px;
-    padding: 10px;
+    margin: 1rem;
+    padding: 1rem;
 
     border-bottom-right-radius: 25px;
 
@@ -546,7 +555,9 @@ h2 {
 }
 
 iframe {
-    margin: 30px;
+    margin: 2rem;
+    padding: 1rem;
+
 }
 
 
@@ -554,8 +565,69 @@ iframe {
 
 /* MEDIA QUERIES */  /* cambios estructurales */
 
+/* TABLETS */
+@media (min-width: 541px) and (max-width: 720px) {
+
+    .grid__menuPrincipal {
+        display: grid;
+        grid-template-areas: "uno uno"
+                            "dos dos"
+                            "tres tres"
+                            "cuatro cuatro"; 
+    }
+    
+    
+    .gridSobreNos {
+        display: grid;
+        grid-template-areas: "uno uno"
+                            "dos dos"
+                            "tres tres"
+                            "cuatro cuatro"
+                            "cinco cinco"; 
+    }
+    
+    
+    .gridPartituras {
+        display: grid;
+        grid-template-areas: "uno uno"
+                            "dos dos"
+                            "tres tres"
+                            "cuatro cuatro"; 
+    }
+    
+    
+    .gridObras {
+        display: grid;
+        grid-template-areas: "uno uno"
+                            "dos dos"
+                            "tres tres"
+                            "cuatro cuatro"
+                            "cinco cinco"
+                            "seis seis"; 
+    }
+    
+    
+    .gridContacto {
+        display: grid;
+        grid-template-areas: "uno uno"
+                            "dos dos"
+                            "tres tres";
+    }
+
+
+    .subirVideo {
+    height: 10vh;
+    width: 70vw;
+    padding: 1rem;
+    margin: 1rem;
+    }
+
+}
+
+
+
+/* CELULARES */
 @media (min-width: 320px) and (max-width: 540px) {
-    /* CELULARES */
 
     .header__titulo {
         padding: 1rem;
@@ -647,20 +719,24 @@ iframe {
 .main__elegirPartituras {
     margin: 2rem;
     padding: 3rem;
+    width: 60vw;
 }
 
 .main__partiturasLorem {
     margin: 2rem;
     padding: 1rem;
+    width: 60vw;
 }
 
 .main__nuevaPartitura {
-    margin: 2rem;
+    margin: 1rem;
     padding: 1rem;
+    width: 80vw;
 }
 
 .imagen__partituras {
-    padding: 1rem;
+    margin: 2rem;
+    width: 70vw;
 }
 
 
@@ -711,64 +787,10 @@ iframe {
     padding: 1rem;
 }
 
-
 .Comentarios {
     margin: 2rem;
     padding: 1rem;
 }
-
-
-}
-
-@media (min-width: 541px) and (max-width: 720px) {
-    /* TABLETS */
-    
-
-    .grid__menuPrincipal {
-        display: grid;
-        grid-template-areas: "uno uno"
-                            "dos dos"
-                            "tres tres"
-                            "cuatro cuatro"; 
-    }
-    
-    
-    .gridSobreNos {
-        display: grid;
-        grid-template-areas: "uno uno"
-                            "dos dos"
-                            "tres tres"
-                            "cuatro cuatro"
-                            "cinco cinco"; 
-    }
-    
-    
-    .gridPartituras {
-        display: grid;
-        grid-template-areas: "uno uno"
-                            "dos dos"
-                            "tres tres"
-                            "cuatro cuatro"; 
-    }
-    
-    
-    .gridObras {
-        display: grid;
-        grid-template-areas: "uno uno"
-                            "dos dos"
-                            "tres tres"
-                            "cuatro cuatro"
-                            "cinco cinco"
-                            "seis seis"; 
-    }
-    
-    
-    .gridContacto {
-        display: grid;
-        grid-template-areas: "uno uno"
-                            "dos dos"
-                            "tres tres";
-    }
 
 
 }
