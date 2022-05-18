@@ -103,7 +103,7 @@ footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     /*background-color: rgb(80, 17, 17);*/
-    background-image: linear-gradient(to bottom, rgb(148, 42, 42), rgb(73, 26, 25));
+    background-image: linear-gradient(to bottom, rgb(148, 42, 42), rgb(73, 27, 25));
 
     padding: 1rem;
     margin: 1rem;
@@ -152,7 +152,7 @@ footer {
 }
 
 .bg-pink {
-    background-color: rgb(194, 132, 97);
+    background-color: rgb(194, 132, 96);
 }
 
 .gridSobreNos {
