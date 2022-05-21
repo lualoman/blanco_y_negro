@@ -1,0 +1,815 @@
+@import 'variables';
+@import 'header';
+@import 'footer';
+@import 'mediaqueries';
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ETIQUETAS GENERALES */
+
+.header__titulo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: brown;
+
+    padding: 2rem;
+    margin: 1rem;
+    height: 12vh;
+
+    background-image: url("../recursos/sheet-music.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    __navegacion {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align-last: center;
+        background-color: rgba(104, 65, 34, 0.664);
+        padding: 10px;
+    }
+
+}
+
+
+.ul__navegacion {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    display: inline;
+    margin: 10px;
+
+    a {
+        text-decoration: none;
+        color: rgb(160, 97, 97);
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    margin: 10px;
+    border: 1px;
+    border-color: rgb(124, 90, 27);
+    border-style: dashed;
+    text-align: center;
+}
+
+/* FIN ETIQUETAS GENERALES */
+
+
+
+
+/*COMIENZO DE MENU PRINCIPAL*/
+
+.body__menuPrincipal {
+    background-color: rgba(102, 75, 45, 0.712);
+
+    .header__index {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .grid__menuPrincipal {
+        display: grid;
+        grid-template-areas: "uno dos cuatro"
+                            "uno dos cuatro"
+                            "uno tres cuatro"
+                            "uno tres cuatro";
+    }
+
+    .gridMuno {
+        grid-area: uno;
+    }
+
+    .gridMdos {
+        grid-area: dos;
+    }
+
+    .gridMtres {
+        grid-area: tres;
+    }
+
+    .gridMcuatro {
+        grid-area: cuatro;
+    }
+
+
+    .menuPrincipal {
+        &__texto {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            background-image: linear-gradient(to bottom, rgb(148, 42, 42), rgb(73, 26, 25));
+        
+            padding: 1rem;
+            margin: 1rem;
+        
+            border: 5px solid rgb(131, 109, 69);
+            border-style: double;
+        
+            text-align: center;
+            align-items: center;
+        }
+
+        &__imagen {
+            display: flex;
+            justify-content: center;
+        
+            padding: 2rem;
+        }
+
+        .derecha {
+            justify-content: center;
+        }
+
+        &__iframe {
+            display: flex;
+            justify-content: center;
+        
+            margin: 0px;
+        }
+
+    }
+
+
+    .index__paddingfooter {
+        padding: 0px;
+    }
+
+}
+
+
+/*COMIENZO DE SOBRE NOSOTRXS*/
+
+.body__sobreNos {
+    background-color: rgb(206, 155, 147);
+
+    .header__sobreNos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bg-pink {
+        background-color: rgb(194, 132, 96);
+    }
+
+    .gridSobreNos {
+        display: grid;
+        grid-template-areas: "uno uno uno cuatro"
+                            "dos dos cinco cinco"
+                            "tres tres cinco cinco";
+    }
+
+    .gridSuno {
+        grid-area: uno;
+    }
+
+    .gridSdos {
+        grid-area: dos;
+    }
+
+    .gridStres {
+        grid-area: tres;
+    }
+
+    .gridScuatro {
+        grid-area: cuatro;
+    }
+
+    .gridScinco {
+        grid-area: cinco;
+    }
+
+    .explicacion1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: bisque;
+        /*background-color: rgb(194, 113, 81);*/
+        background-image: linear-gradient(to right, rgb(187, 113, 73), rgb(180, 128, 98));
+
+        margin: 3rem;
+        padding: 1rem;
+
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+    .img__piano {
+        height: 400px;
+        width: 600px;
+    }
+
+    .sobreNos__imagen {
+        display: flex;
+        justify-content: center;
+
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .explicacion2 {
+        display: flex;
+
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        background-color: rgb(69, 99, 95);
+
+        margin: 2rem;
+        padding: 1rem;
+
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+    }
+
+    .explicacion3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(36, 33, 29);
+        /*background-color: rgb(187, 113, 73);*/
+        background-image: linear-gradient(to bottom, rgb(168, 103, 67), rgb(180, 130, 107), rgb(114, 47, 46));
+
+        margin: 1rem;
+        padding: 1rem;
+
+        border-bottom-right-radius: 25px;
+    }
+
+    h3 {
+        display: flex;
+        justify-content: center;
+
+        background-color: bisque;
+    }
+
+}
+
+
+
+
+/*COMIENZO DE PARTITURAS*/
+
+.body__partituras {
+    background-color: rgba(102, 75, 45, 0.712);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    .header__partituras {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main {
+
+        &__Partituras {
+            display: flex;
+        }
+
+        &__elegirPartituras {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+            /*background-color: bisque;*/
+            margin: 20px;
+            padding: 30px;
+        
+            border-color: rgb(83, 16, 16);
+            border-style: groove;
+        
+            background-image: linear-gradient(to right, rgba(165, 101, 67, 0.678), rgb(187, 141, 114));
+        }
+        
+        &__partiturasLorem {
+            display: flex;
+        
+            background-color: rgb(15, 87, 87);
+            color: azure;
+        
+            margin: 20px;
+            padding: 10px;
+        
+            border-color: rgb(23, 16, 83);
+            border-style: groove;
+            border-bottom-right-radius: 25px;
+            border-top-left-radius: 25px;
+        }
+        
+        &__nuevaPartitura {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+            /*background-color: rgb(139, 209, 186);*/
+            margin: 10px;
+            padding: 5px;
+        
+            border-color: rgb(65, 121, 131);
+            border-style: groove;
+        
+            background-image: linear-gradient(to right, rgb(60, 70, 163), rgb(98, 147, 180));
+        }
+
+    }
+
+    .bg-babyblue {
+        background-color: rgb(65, 121, 131);
+    }
+
+    .gridPartituras {
+        display: grid;
+        grid-template-areas: "uno uno cuatro cuatro" 
+                            "dos dos cuatro cuatro"
+                            "tres tres cuatro cuatro";
+    }
+
+    .gridPuno {
+        grid-area: uno;
+    }
+
+    .gridPdos {
+        grid-area: dos;
+    }
+
+    .gridPtres {
+        grid-area: tres;
+    }
+
+    .gridPcuatro {
+        grid-area: cuatro;
+    }
+
+    .imagen__partituras {
+        display: flex;
+
+        padding: 10px;
+        height: auto;
+        width: 300px;
+
+            &:hover{
+                transform: rotate(2deg) translate(16px,0px);
+            }
+    }
+
+}
+
+
+
+
+/*COMIENZO DE OBRAS*/
+
+.body__obras {
+    background-color: black;
+
+
+    .header__obras {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bg-purple {
+        background-color: rgb(43, 43, 124);
+    }
+
+    .link__nav {
+        color: white;
+    }
+
+
+    .main {
+        &__Obras {
+            display: flex;
+
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        &__ObrasVideos {
+            display: flex;
+            flex-direction: column;
+    
+            color: white;
+            margin: 1rem;
+            padding: 10px;
+    
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+    
+            background-image: linear-gradient(to top, rgb(77, 43, 25), rgb(150, 104, 78));
+        }
+
+}
+
+    .gridObras {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.25fr 0.25fr 0.25fr 0.25fr;
+        grid-template-areas: "uno uno seis"
+                            "tres tres seis"
+                            "cuatro cinco dos";
+    }
+
+    .gridObrasuno {
+        grid-area: uno;
+    }
+
+    .gridObrasdos {
+        grid-area: dos;
+    }
+
+    .gridObrastres {
+        grid-area: tres;
+    }
+
+    .gridObrascuatro {
+        grid-area: cuatro;
+    }
+
+    .gridObrascinco {
+        grid-area: cinco;
+    }
+
+    .gridObrasseis {
+        grid-area: seis;
+    }
+
+
+    .explicacionObras {
+        display: flex;
+
+        margin: 10px;
+        padding: 20px;
+
+        background-color: beige;
+        border-color: rgb(199, 141, 109);
+        border-style: inset;
+        border-width: 5px;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+
+        background-image: linear-gradient(to right, rgb(192, 122, 84), rgb(180, 128, 98));
+    }
+
+    .imagen__Obras {
+        display: flex;
+
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .subirVideo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 1rem;
+        height: 25vh;
+
+        border-style: dashed;
+        color: white;
+        background-color: rgb(43, 43, 124);
+
+        &:hover{
+            transform: scale(1.5);
+        }
+
+    }
+
+    .footer__obras {
+        color: white;
+    }
+
+}
+
+
+/*COMIENZO DE CONTACTO*/
+
+.body__contacto {
+    background-color: rgba(102, 75, 45, 0.712);
+
+    .header__contacto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex__contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .gridContacto {
+        display: grid;
+        grid-template-areas: "uno uno tres tres"
+                            "dos dos tres tres"
+                            "dos dos tres tres";
+    }
+
+    .gridCuno {
+        grid-area: uno;
+    }
+
+    .gridCdos {
+        grid-area: dos;
+    }
+
+    .gridCtres {
+        grid-area: tres;
+    }
+
+    .Form {
+        background-color: rgb(8, 44, 82);
+        color: white;
+        border-style: double;
+        border-color: rgb(76, 121, 121);
+
+        margin: 1rem;
+        padding: 1rem;
+
+        border-top-left-radius: 25px;
+
+        background-image: linear-gradient(to right, rgb(8, 44, 82), rgb(76, 121, 121));
+    }
+
+
+    .Comentarios {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        background-color: rgb(8, 44, 68);
+
+        margin: 1rem;
+        padding: 1rem;
+
+        border-bottom-right-radius: 25px;
+
+        background-image: linear-gradient(to top, rgb(8, 44, 82), rgb(76, 121, 121));
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+
+        color: wheat;
+        background-color: rgb(107, 46, 46);
+    }
+
+    iframe {
+        margin: 2rem;
+        padding: 1rem;
+
+    }
+
+}
+
+
+
+/* MEDIA QUERIES */  /* cambios estructurales */
+
+/* TABLETS */
+@media (min-width: 541px) and (max-width: 720px) {
+
+    .grid__menuPrincipal {
+        display: grid;
+        grid-template-areas: "uno uno"
+                            "dos dos"
+                            "tres tres"
+                            "cuatro cuatro"; 
+    }
+    
+    
+    .gridSobreNos {
+        display: grid;
+        grid-template-areas: "uno uno"
+                            "dos dos"
+                            "tres tres"
+                            "cuatro cuatro"
+                            "cinco cinco"; 
+    }
+    
+    
+    .gridPartituras {
+        display: grid;
+        grid-template-areas: "uno uno"
+                            "dos dos"
+                            "tres tres"
+                            "cuatro cuatro"; 
+    }
+    
+    
+    .gridObras {
+        display: grid;
+        grid-template-areas: "uno uno"
+                            "dos dos"
+                            "tres tres"
+                            "cuatro cuatro"
+                            "cinco cinco"
+                            "seis seis"; 
+    }
+    
+    
+    .gridContacto {
+        display: grid;
+        grid-template-areas: "uno uno"
+                            "dos dos"
+                            "tres tres";
+    }
+
+
+    .subirVideo {
+    height: 10vh;
+    width: 70vw;
+    padding: 1rem;
+    margin: 1rem;
+    }
+
+}
+
+
+
+/* CELULARES */
+@media (min-width: 320px) and (max-width: 540px) {
+
+    .header__titulo {
+        padding: 1rem;
+        margin: 1rem;
+        height: 10vh;
+    }
+
+    .header__navegacion {
+        text-align-last: center;
+        padding: 1rem;
+    }
+
+    li {
+        margin: 1rem;
+    }
+
+    footer {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+/* FIN DE ETIQUETAS GENERALES*/
+
+
+
+/* MENU PRINCIPAL */
+
+.grid__menuPrincipal {
+    display: grid;
+    grid-template-areas: "uno"
+                        "dos"
+                        "tres"
+                        "cuatro"; 
+}
+
+.menuPrincipal__texto {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.menuPrincipal__imagen {
+    padding: 2rem;
+}
+
+
+/* SOBRE NOS */
+
+.gridSobreNos {
+    display: grid;
+    grid-template-areas: "uno"
+                        "dos"
+                        "tres"
+                        "cuatro"
+                        "cinco";
+}
+
+.explicacion1 {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.sobreNos__imagen {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.explicacion2 {
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.explicacion3 {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+/* PARTITURAS */
+
+.gridPartituras {
+    display: grid;
+    grid-template-areas: "uno"
+                        "dos"
+                        "tres"
+                        "cuatro";
+}
+
+.main__elegirPartituras {
+    margin: 2rem;
+    padding: 3rem;
+    width: 60vw;
+}
+
+.main__partiturasLorem {
+    margin: 2rem;
+    padding: 1rem;
+    width: 60vw;
+}
+
+.main__nuevaPartitura {
+    margin: 1rem;
+    padding: 1rem;
+    width: 80vw;
+}
+
+.imagen__partituras {
+    margin: 2rem;
+    width: 70vw;
+}
+
+
+/* OBRAS */
+
+.gridObras {
+    display: grid;
+    grid-template-areas: "uno"
+                        "dos"
+                        "tres"
+                        "cuatro"
+                        "cinco"
+                        "seis";
+}
+
+.explicacionObras {
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.imagen__Obras {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.subirVideo {
+    margin: 3rem;
+    padding: 1rem;
+}
+
+.main__ObrasVideos {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+/* CONTACTO */
+
+.gridContacto {
+    display: grid;
+    grid-template-areas: "uno"
+                        "dos"
+                        "tres";
+}
+
+.Form {
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.Comentarios {
+    margin: 2rem;
+    padding: 1rem;
+}
+
+
+}
