@@ -1,0 +1,57 @@
+/* TABLETS */
+@media (min-width: 541px) and (max-width: 720px) {
+
+    .row {
+        display: block;
+        --bs-gutter-x: 0;
+    }
+
+    main {
+
+        h3 {
+            text-align: center;
+        }
+
+        .body__sobreNos, .explicacion {
+            margin: 1rem;
+            width: auto;
+        }
+
+        .body__sobreNos, .carousel {
+            width: auto;
+        }
+
+        .body__sobreNos, .partituras__cajas {
+            margin: 1rem;
+            margin-left: 2rem;
+            width: auto;
+        }
+    }
+}
+
+/* CELULARES */
+@media (min-width: 320px) and (max-width: 540px) {
+
+    main {
+
+        .body__sobreNos, .row {
+            display: block;
+            --bs-gutter-x: 0;
+        }
+
+        .body__sobreNos, .explicacion {
+            margin: 1rem;
+            width: auto;
+        }
+
+        .body__sobreNos, .carousel {
+            width: auto;
+        }
+
+        .body__sobreNos, .partituras__cajas {
+            margin: 1rem;
+            margin-left: 2rem;
+            width: auto;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+footer {
+    color: white;
+
+    .logos {
+        width: 2vw;
+    }
+
+    ul li a::before {
+        content: " | ";
+    }
+}

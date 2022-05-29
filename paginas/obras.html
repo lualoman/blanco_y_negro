@@ -4,116 +4,150 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- BOOTSTRAP -->
+    <title>Obras</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css"/>
 </head>
 
 <body class="body__obras">
-    <header class="header__obras">
-        <!--<h1 class="header__titulo">OBRAS</h1>
-        <nav class="header__navegacion">
-            <ul class="ul__navegacion">
-                <li><a href="../index.html">Menu Principal</a></li>
-                <li><a href="sobre-nosotrxs.html">Sobre Nosotrxs</a></li>
-                <li><a href="partituras.html">Partituras</a></li>
-                <li><a href="obras.html">Obras</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>-->
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-purple">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#">Obras</a>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="active link__nav" aria-current="page" href="../index.html">Menu Principal</a>
-                </li>
-                <li class="nav-item">
-                    <a class="link__nav" href="sobre-nosotrxs.html">Sobre Nosotrxs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="link__nav" href="partituras.html">Partituras</a>
-                </li>
-                <li class="nav-item">
-                    <a class="link__nav" href="obras.html">Obras</a>
-                </li>
-                <li class="nav-item">
-                    <a class=" link__nav" href="contacto.html">Contacto</a>
-                </li>
-                </ul>
-                <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+                <a href="index.html"><img src="../recursos/logo-pagina.svg" alt="icono de pagina" height="36"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre-nosotrxs.html">Nosotrxs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="partituras.html">Partituras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="obras.html">Obras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
-    <main class="main__Obras gridObras">
-        <section class="explicacionObras gridObrasuno">
-            <p>¡En este espacio podes visualizar obras que han interpretado otros usuarixs! Tambien podes compartirnos tu obras y experiencia con la misma. Nuestro foro te espera :D
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ea perspiciatis quia inventore accusamus harum autem officiis repudiandae libero suscipit error reprehenderit debitis, laborum quasi ab, tempora rem quis. Aspernatur.
-                Vero esse quia aliquam enim sed vel nesciunt! Praesentium exercitationem sed commodi. Dolorum ducimus placeat natus laborum facere ea mollitia, ipsum, assumenda voluptates quaerat culpa id, aliquam similique cupiditate deserunt!
-            </p>
+    <main class="container">
+        <section class="row text-center">
+            <div class="col obras__txt fondo1" data-aos="zoom-in" data-aos-duration="3000">
+                <p>En este espacio podes visualizar obras variadas que te ayudaran a seguir un modelo de performance para tus interpretaciones y videos. Cada semana encontraras una nueva seleccion de interpretaciones que, al ser parte de nuestrxs usuarixs, adaptaremos exclusivamente para ti y tus gustos.</p>
+                <p>Por ello, ¡tu opinion es importante!</p>
+            </div>
         </section>
-        
-        <div class="imagen__Obras gridObrasdos">      
-            <img src="../recursos/manosypiesenpiano.jpg" alt="imagen de manos en piano" />
-        </div>
 
-        <!-- ESPACIO PARA SUBIR VIDEOS-->
-        <div class="subirVideo gridObrastres">
-            <p>Sube tu video aqui</p>
-            <form enctype="multipart/form-data">
-                <input type="file" name="nuevaInterpretacion"/>
-            </form>
-        </div>
+        <section class="row align-items-center">
+            <div class="col col-lg-6 col-md-6 col-sm-12 obras__videos" data-aos="fade-up-right" data-aos-duration="3000">
+                <iframe width=100% src="https://www.youtube.com/embed/r_5bYNqpEFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="mb-3">
+                    <p>¿Que te parece este video? ¡Se parte del foro!</p>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div>    
+                    <input type="submit" value="Enviar Comentarios" action="post" />
+                </div>  
+            </div>
 
-            <!-- COMIENZA SECCION DE VIDEOS DE OTROS USUARIXS --> 
-        <div class="main__ObrasVideos gridObrascuatro">
-            <iframe src="https://www.youtube.com/embed/_fsjNfffknA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col col-lg-5 col-md-6 col-sm-12 align-items-center fondo2">
+                <img class="img-fluid" src="../recursos/learnpiano.gif" alt="gif piano"/>
+            </div>
+        </section>
 
-            <p>¿Que te parece este video? ¡Se parte del foro!</p>
-            <textarea name="textarea">Comparte aquí tu opinion</textarea>
-                        
-            <input type="submit" value="Enviar Comentarios" action="post" />
-        </div>
+        <section class="container align-items-center">
+            <article class="row fondo1">
+                <div class="col col-lg-5 col-md-12 col-sm-12 obras__videos" data-aos="flip-up" data-aos-duration="3000">
+                    <iframe width=100% src="https://www.youtube.com/embed/_wGoBZ8Wsis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="mb-3">
+                        <p>¿Que te parece este video? ¡Se parte del foro!</p>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div>    
+                        <input type="submit" value="Enviar Comentarios" action="post" />
+                    </div>  
+                </div>
 
-        <div class="main__ObrasVideos gridObrascinco">
-            <iframe src="https://www.youtube.com/embed/wfF0zHeU3Zs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                
-            <p>¿Que te parece este video? ¡Se parte del foro!</p>
-            <textarea name="textarea">Comparte aquí tu opinion</textarea>
-                
-            <input type="submit" value="Enviar Comentarios" action="post" />
-        </div>
+                <div class="col col-lg-5 col-md-12 col-sm-12 obras__videos" data-aos="fade-down-left" data-aos-duration="3000">
+                    <iframe width=100% src="https://www.youtube.com/embed/_fsjNfffknA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="mb-3">
+                        <p>¿Que te parece este video? ¡Se parte del foro!</p>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div>    
+                        <input type="submit" value="Enviar Comentarios" action="post" />
+                    </div>  
+                </div>
+            </article>
 
-        <div class="main__ObrasVideos gridObrasseis">
-            <iframe src="https://www.youtube.com/embed/r_5bYNqpEFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
-            <p>¿Que te parece este video? ¡Se parte del foro!</p>  
-            <textarea name="textarea">Comparte aquí tu opinion</textarea>
-            
-            <input type="submit" value="Enviar Comentarios" action="post" />
-        </div>
-        <!-- FINALIZA SECCION DE VIDEOS -->
+            <article class="row align-items-center">
+                <div class="col col-lg-5 col-md-12 col-sm-12 fondo2" width="100%" data-aos="zoom-in" data-aos-duration="3000">
+                    <img class="img-fluid" src="../recursos/manospiano.gif" alt="gif manos"/>
+                </div>
+
+                <div class="col col-lg-5 col-md-12 col-sm-12 align-items-center obras__videos" data-aos="fade-up-right" data-aos-duration="3000">
+                    <iframe width=100% src="https://www.youtube.com/embed/EDQgU1CPpis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="mb-3">
+                        <p>¿Que te parece este video? ¡Se parte del foro!</p>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div>    
+                        <input type="submit" value="Enviar Comentarios" action="post" />
+                    </div>  
+                </div>
+            </article>
+        </section>
     </main>
 
-    <footer class="footer__obras">
-        <p>
-        Todos los derechos reservados.
-        </p>
+    <footer class="container text-center">
+        <div class="row fondo1">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-transparent justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre-nosotrxs.html">Nosotrxs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="partituras.html">Partituras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="obras.html">Obras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <h5>Nuestras redes</h5>
+                    <img class="logos" src="../recursos/logo-instagram.svg" alt="logo instagram">
+                    <img class="logos" src="../recursos/logo-twitter.svg" alt="logo twitter">
+                    <img class="logos" src="../recursos/logo-facebook.svg" alt="logo facebook">
+                    <p>Todos los derechos reservados</p>
+            </div>
+        </div>
     </footer>
 
-    <!-- SCRIPT BOOTSTRAP-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

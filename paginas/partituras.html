@@ -4,109 +4,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- BOOTSTRAP -->
+    <title>Partituras</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css"/>
 </head>
 
 <body class="body__partituras">
-    <header class="header__partituras">
-    <!--<h1 class="header__titulo">PARTITURAS</h1>
-        <nav class="header__navegacion">
-            <ul class="ul__navegacion">
-                <li><a href="../index.html">Menu Principal</a></li>
-                <li><a href="sobre-nosotrxs.html">Sobre Nosotrxs</a></li>
-                <li><a href="partituras.html">Partituras</a></li>
-                <li><a href="obras.html">Obras</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>-->
-
-        
-            <nav class="navbar navbar-expand-lg navbar-light bg-babyblue">
-                <div class="container-fluid">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <div class="container-fluid">
+                <a href="index.html"><img src="../recursos/logo-pagina.svg" alt="icono de pagina" height="36"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="#">Partituras</a>
+                <a class="navbar-brand" href="#"></a>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Menu Principal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sobre-nosotrxs.html">Sobre Nosotrxs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="partituras.html">Partituras</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="obras.html">Obras</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre-nosotrxs.html">Nosotrxs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="partituras.html">Partituras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="obras.html">Obras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
                     </ul>
-                    <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
                 </div>
-                </div>
-            </nav>
-        </header>
-    
-        <main class="main__Partituras gridPartituras">
-            <section class="main__elegirPartituras gridPuno">
-                <p>Elije el tipo de partitura que deseas interpretar</p>
-                <form>
-                    <select name="partituras">
-                        <option value="tipo_de_partitura" >Tipo de Partitura</option>
-                        <option value="contemporaneas" >Contemporaneas</option>
-                        <option value="clasicas" >Clasicas</option>
-                        <option value="personalizadas" >Perzonalizadas</option>
-                    </select>
-                </form>
-            </section>
-    
-                <div class="main__partiturasLorem gridPdos">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore quis non necessitatibus quae corporis tempore molestias velit temporibus facilis nobis nulla neque maiores, similique veniam exercitationem eius qui maxime deserunt?
-                        Ad labore excepturi tenetur sit? Optio libero nostrum nam modi quisquam, dignissimos dicta architecto quis iusto voluptate, nesciunt sapiente placeat ratione consequuntur numquam sed perspiciatis deserunt quae quas eligendi nemo.
-                        Placeat similique reiciendis amet velit voluptas odit molestiae dicta necessitatibus? Quasi, quisquam autem voluptatibus illo dolor, consectetur beatae voluptas dolore quibusdam molestias nihil commodi, iste odio! Odit, nobis! Repudiandae, eveniet.
-                        Rem repellendus magnam ut similique veniam harum corrupti animi mollitia beatae quis perspiciatis impedit, nemo iure ipsam id tempore consequuntur odit! Quia, et dolore voluptas laboriosam quisquam voluptatem sapiente maiores.
-                        Fuga inventore obcaecati aspernatur facilis nemo, excepturi corrupti, quis id impedit quasi nesciunt reprehenderit eum dignissimos eveniet saepe maiores soluta accusamus porro officia alias! Consequuntur magnam optio dolorem deserunt nesciunt.
-                    </p>
-                </div>
-    
-                <!-- ESTA SECCION ES, POR EL MOMENTO, SOLO PARA DAR FORMA A LA IDEA DEL PROYECTO --> 
-                <div class="main__nuevaPartitura gridPtres">
-                    <p>Subir nueva partitura a nuestra Biblioteca pública</p>
-                    <form enctype="multipart/form-data">
-                        <input type="file" name="nuevaPartitura"/>
-                    </form>
-                </div>
-
-                <div class="imagen__partituras gridPcuatro">
-                    <img class="img-fluid" src="../recursos/Biblioteca_Barzio.jpg" alt="imagen de biblioteca" />
-                </div>
-
-        <!--<article class="row">
-            <div class="col">
-                <img class="img-fluid" src="../recursos/biblioteca.png" alt="imagen de biblioteca" />
             </div>
-        </article>-->
-    </main>
+        </nav>
+    </header>
+    
+        <main>
+            <section class="container">
+                <div class="row text-center">
+                    <div class="col align-self-center partituras__cajas partituras__txt" data-aos="flip-up" data-aos-duration="3000">
+                        <p>
+                            Busca la partitura que necesitas, de antes, de ahora, tuya o de alguien mas. Recorda compartirnos tu experiencia en la calidad y detalles de las mismas, tambien podras encontrar versiones en diferentes editoriales. ¿Ya tenes tu favorita?
+                        </p>
+                    </div>
+                </div>
 
-    <footer>
-        <p>
-            Todos los derechos reservados.
-        </p>
-    </footer>
+                <section class="container">
+                    <article class="row">
+                        <div class="col col-lg-6 col-md-12 col-sm-12 align-self-end">      
+                            <img class="img__partituras img-fluid" src="../recursos/tutoriales.gif" alt="gif tutoriales" />
+                        </div>
+                        <div class="col col-lg-6 col-md-12 col-sm-12">
+                            <img class="img__partituras img-fluid" src="../recursos/principal-musicaenpaper.jpg" alt="imagen de partituras" />
+                        </div>
+                    </article>
+                </section>
 
-    <!-- SCRIPT BOOTSTRAP-->
+                <div class="row align-items-center">
+                    <div class="col col-lg-5 col-md-6 col-sm-12 align-self-start partituras__cajas" data-aos="flip-left" data-aos-duration="3000">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Elige un tipo de Partitura</option>
+                            <option value="1">Contemporaneas</option>
+                            <option value="2">Clasicas</option>
+                            <option value="3">Perzonalizadas</option>
+                        </select>
+
+                        <div class="col align-self-center">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Elige Editorial</option>
+                                <option value="1">Melos</option>
+                                <option value="2">Scholtz, Herrmann</option>
+                                <option value="3">Schimers</option>
+                                <option value="4">Otra</option>
+                            </select>
+                        </div>
+                        <div class="align-self-start">
+                            <button type="submit" class="btn btn-dark">Buscar</button>
+                        </div>
+                    </div>
+                    
+                    <div class="col align-self-start partituras__cajas" data-aos="flip-right" data-aos-duration="3000">
+                        <p>¿No encontraste lo que buscabas? ¡Informanos para ayudarte!</p>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Dejanos tu e-mail para avisarte cuando tengamos novedades para vos</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Escribe aqui</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-dark">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="container text-center">
+            <div class="row fondo1">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent justify-content-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobre-nosotrxs.html">Nosotrxs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="partituras.html">Partituras</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="obras.html">Obras</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+    
+                    <h5>Nuestras redes</h5>
+                        <img class="logos" src="../recursos/logo-instagram.svg" alt="logo instagram">
+                        <img class="logos" src="../recursos/logo-twitter.svg" alt="logo twitter">
+                        <img class="logos" src="../recursos/logo-facebook.svg" alt="logo facebook">
+                        <p>Todos los derechos reservados</p>
+                </div>
+            </div>
+        </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

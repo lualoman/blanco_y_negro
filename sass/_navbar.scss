@@ -1,0 +1,12 @@
+.navbar {
+    padding-bottom: 3rem;
+
+    &-collapse {
+        flex-grow: unset;
+        color: white;
+    }
+
+    .nav-item:hover {
+        background-color: #141414;
+    }
+}  
