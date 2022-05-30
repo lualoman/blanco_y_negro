@@ -8,10 +8,6 @@
 
     main {
 
-        h3 {
-            text-align: center;
-        }
-
         .body__sobreNos, .explicacion {
             margin: 1rem;
             width: auto;
@@ -52,6 +48,14 @@
             margin: 1rem;
             margin-left: 2rem;
             width: auto;
+        }
+
+        .form-control {
+            width: auto;
+        }
+
+        footer .logos {
+            width: 5vw;
         }
     }
 }

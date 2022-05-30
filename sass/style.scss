@@ -31,6 +31,17 @@ p::selection {
     color: #141414;
 }
 
+h1 {
+    color: $color-h1;
+}
+
+h2 {
+    color: $color-h2;
+}
+
+h3 {
+    color: $color-h3;
+}
 
 
 .body {
@@ -120,10 +131,6 @@ p::selection {
 
     &__contacto {
         background-image: $fondo-Contacto;
-
-        h3 {
-            color: $color-letras;
-        }
     
         .contacto {
             &__form {
@@ -132,7 +139,7 @@ p::selection {
                 max-width: 40vw;
             }
         
-            &__h4 {
+            &__h3 {
                 color: $color-letras;
                 padding: 1rem;
                 width: auto;
