@@ -137,3 +137,13 @@ h3 {
     padding: 1rem;
     width: auto;
     height: auto; }
+
+.partituras__cajas {
+  color: #09364b;
+  border: 5px rgba(119, 70, 70, 0.712);
+  border-style: dotted; }
+
+.obras__videos {
+  color: #132e27;
+  border: 5px #926b73;
+  border-style: groove; }

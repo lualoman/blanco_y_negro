@@ -44,6 +44,7 @@ h3 {
 }
 
 
+
 .body {
 
     &__menuPrincipal {
@@ -148,3 +149,19 @@ h3 {
         }
     }
 }
+
+
+@mixin mixCajas ($color, $color-bordes, $tipo-bordes) {
+    color: $color;
+    border: 5px $color-bordes;
+    border-style: $tipo-bordes;
+}
+
+.partituras__cajas {
+	@include mixCajas(rgb(9, 54, 75), rgba(119, 70, 70, 0.712), dotted);
+}
+
+.obras__videos {
+	@include mixCajas(rgb(19, 46, 39), rgb(146, 107, 115), groove);
+}
+

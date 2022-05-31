@@ -1,37 +1,35 @@
 INDEX:
 
-Keywords:
+Agregue estas Keywords: musica, partituras, piano, biblioteca, compositores
 
-Direccion:
+Agregue estos titulos: Blanco y Negro - Biblioteca de Partituras - Inicio
 
 
 
 SOBRE NOSOTRXS:
 
-Keywords:
+Agregue estas Keywords: musica, partituras, piano, obras, pampa
 
-Direccion:
+Agregue estos titulos: Blanco y Negro - Biblioteca de Partituras - Nosotrxs
 
 
 
 PARTITURAS:
 
-Keywords:
+Agregue estas Keywords: editoriales, partituras, instrumentos, biblioteca, compositores
 
-Direccion:
+Agregue estos titulos: Blanco y Negro - Biblioteca de Partituras - Partituras
 
 
 
 OBRAS:
+Agregue estas Keywords: musicales, videos, piano, guitarra, canto
 
-Keywords:
-
-Direccion:
+Agregue estos titulos: Blanco y Negro - Biblioteca de Partituras - Obras
 
 
 
 CONTACTO:
+Agregue estas Keywords: musica, partituras, contacto, biblioteca, pampa
 
-Keywords:
-
-Direccion:
+Agregue estos titulos: Blanco y Negro - Biblioteca de Partituras - Contacto
