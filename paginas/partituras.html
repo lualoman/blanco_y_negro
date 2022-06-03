@@ -66,45 +66,47 @@
                     </article>
                 </section>
 
-                <div class="row align-items-center">
-                    <h2>Encontra el contenido que buscas</h2>
-                    <div class="col col-lg-5 col-md-6 col-sm-12 align-self-start partituras__cajas" data-aos="flip-left" data-aos-duration="3000">
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Elige un tipo de Partitura</option>
-                            <option value="1">Contemporaneas</option>
-                            <option value="2">Clasicas</option>
-                            <option value="3">Perzonalizadas</option>
-                        </select>
-
-                        <div class="col align-self-center">
+                <form enctype="text" method="get">
+                    <div class="row align-items-center">
+                        <h2>Encontra el contenido que buscas</h2>
+                        <div class="col col-lg-5 col-md-6 col-sm-12 align-self-start partituras__cajas" data-aos="flip-left" data-aos-duration="3000">
                             <select class="form-select" aria-label="Default select example">
-                                <option selected>Elige Editorial</option>
-                                <option value="1">Melos</option>
-                                <option value="2">Scholtz, Herrmann</option>
-                                <option value="3">Schimers</option>
-                                <option value="4">Otra</option>
+                                <option selected>Elige un tipo de Partitura</option>
+                                <option value="1">Contemporaneas</option>
+                                <option value="2">Clasicas</option>
+                                <option value="3">Perzonalizadas</option>
                             </select>
+
+                            <div class="col align-self-center">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Elige Editorial</option>
+                                    <option value="1">Melos</option>
+                                    <option value="2">Scholtz, Herrmann</option>
+                                    <option value="3">Schimers</option>
+                                    <option value="4">Otra</option>
+                                </select>
+                            </div>
+                            <div class="align-self-start">
+                                <button type="submit" class="btn btn-dark">Buscar</button>
+                            </div>
                         </div>
-                        <div class="align-self-start">
-                            <button type="submit" class="btn btn-dark">Buscar</button>
-                        </div>
-                    </div>
                     
-                    <div class="col align-self-start partituras__cajas" data-aos="flip-right" data-aos-duration="3000">
-                        <p>¿No encontraste lo que buscabas? ¡Informanos para ayudarte!</p>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Dejanos tu e-mail para avisarte cuando tengamos novedades para vos</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Escribe aqui</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <div>
-                            <button type="submit" class="btn btn-dark">Enviar</button>
+                        <div class="col align-self-start partituras__cajas" data-aos="flip-right" data-aos-duration="3000">
+                            <p>¿No encontraste lo que buscabas? ¡Informanos para ayudarte!</p>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Dejanos tu e-mail para avisarte cuando tengamos novedades para vos</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Escribe aqui</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-dark">Enviar</button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </section>
         </main>
         
@@ -132,10 +134,10 @@
                     </nav>
     
                     <h3>Nuestras redes</h3>
-                        <img class="logos" src="../recursos/logo-instagram.svg" alt="logo instagram">
-                        <img class="logos" src="../recursos/logo-twitter.svg" alt="logo twitter">
-                        <img class="logos" src="../recursos/logo-facebook.svg" alt="logo facebook">
-                        <p>Todos los derechos reservados</p>
+                    <a href="https://www.instagram.com/"><img class="logos" src="../recursos/logo-instagram.svg" alt="logo instagram"></a>
+                    <a href="https://www.twitter.com/"><img class="logos" src="../recursos/logo-twitter.svg" alt="logo twitter"></a>
+                    <a href="https://www.facebook.com/"><img class="logos" src="../recursos/logo-facebook.svg" alt="logo facebook"></a>
+                    <p>Todos los derechos reservados</p>
                 </div>
             </div>
         </footer>
