@@ -17,7 +17,7 @@
     margin-bottom: 2rem;
 }
 
-.fondo1 {
+.obras__fondo {
     background-color: $fondo-cajas;
 }
 
@@ -108,15 +108,15 @@ h3 {
 
     &__obras {
         background-image: $fondo-Obras;
-    
-        .fondo2 {
-            background-color: $fondo-img-obras;
-        }
 
         .obras {
             &__txt {
                 max-width: 60vw;
                 margin: 1rem;
+
+                &__fondo2 {
+                    background-color: $fondo-img-obras;
+                }
             }
 
             &__videos {
@@ -136,8 +136,6 @@ h3 {
         .contacto {
             &__form {
                 color: $color-letras;
-                margin-left: 3rem;
-                max-width: 40vw;
             }
         
             &__h3 {

@@ -55,7 +55,7 @@ footer {
   padding: 1rem;
   margin-bottom: 2rem; }
 
-.fondo1 {
+.obras__fondo {
   background-color: rgba(152, 190, 185, 0.164); }
 
 p {
@@ -113,11 +113,11 @@ h3 {
 
 .body__obras {
   background-image: linear-gradient(to right, #181a2b, #234e48); }
-  .body__obras .fondo2 {
-    background-color: rgba(126, 105, 99, 0.397); }
   .body__obras .obras__txt {
     max-width: 60vw;
     margin: 1rem; }
+    .body__obras .obras__txt__fondo2 {
+      background-color: rgba(126, 105, 99, 0.397); }
   .body__obras .obras__videos {
     max-width: 60vw;
     margin: 2rem;
@@ -129,9 +129,7 @@ h3 {
 .body__contacto {
   background-image: radial-gradient(circle, #234e48 0%, #181a2b 100%); }
   .body__contacto .contacto__form {
-    color: white;
-    margin-left: 3rem;
-    max-width: 40vw; }
+    color: white; }
   .body__contacto .contacto__h3 {
     color: white;
     padding: 1rem;
