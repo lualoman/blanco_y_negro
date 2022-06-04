@@ -11,13 +11,16 @@
 }
 
 
+.row {
+    margin: 1rem;
+    --bs-gutter-y: 1rem;
+}
 
 .col {
     padding: 1rem;
-    margin-bottom: 2rem;
 }
 
-.obras__fondo {
+.contenido__fondo {
     background-color: $fondo-cajas;
 }
 
@@ -50,10 +53,6 @@ h3 {
     &__menuPrincipal {
         background-image: $fondo-Inicio;
         color: $color-letras;
-
-        .col__inicio {
-            margin-bottom: 0;
-        }
     }
 
     &__sobreNos {
@@ -110,20 +109,13 @@ h3 {
         background-image: $fondo-Obras;
 
         .obras {
-            &__txt {
-                max-width: 60vw;
-                margin: 1rem;
-
-                &__fondo2 {
-                    background-color: $fondo-img-obras;
-                }
+            &__fondo2 {
+                background-color: $fondo-img-obras;
             }
+            
 
             &__videos {
-                max-width: 60vw;
-                margin: 2rem;
-                margin-left: 2rem;
-                margin-right: 2rem;
+                padding: 1rem;
                 border: 0.25rem $color-bordes-videos;
                 border-style: $tipo-bordes-recuadros;
             }
@@ -136,6 +128,8 @@ h3 {
         .contacto {
             &__form {
                 color: $color-letras;
+                margin-left: 10vw;
+                margin-right: 10vw;
             }
         
             &__h3 {
