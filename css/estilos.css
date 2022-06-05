@@ -78,6 +78,10 @@ h2 {
 h3 {
   color: white; }
 
+.body__404 {
+  background-image: linear-gradient(to right, #181a2b, #234e48);
+  color: white; }
+
 .body__menuPrincipal {
   background-image: linear-gradient(to right, #181a2b, #234e48);
   color: white; }

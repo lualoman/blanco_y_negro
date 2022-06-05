@@ -50,6 +50,11 @@ h3 {
 
 .body {
 
+    &__404 {
+        background-image: $fondo-Inicio;
+        color: $color-letras;
+    }
+
     &__menuPrincipal {
         background-image: $fondo-Inicio;
         color: $color-letras;
