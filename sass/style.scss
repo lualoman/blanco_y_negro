@@ -75,18 +75,18 @@ h3 {
                 margin-left: 2rem;
                 margin-right: 3rem;
             }
+
+            &__explicacion {
+                background-color: $fondo-cajas;
+                color: $color-letras;
+                padding: 1rem;
+                margin: 1rem;
+            }
         }
 
         .carousel {
             width: 100%;
             padding: 1rem;
-        }
-
-        .explicacion {
-            background-color: $fondo-cajas;
-            color: $color-letras;
-            padding: 1rem;
-            margin: 1rem;
         }
     }
 
@@ -112,6 +112,10 @@ h3 {
 
     &__obras {
         background-image: $fondo-Obras;
+
+        .row {
+            --bs-gutter-y: 0;
+        }
 
         .obras {
             &__fondo2 {
