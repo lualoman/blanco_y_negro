@@ -25,7 +25,6 @@ footer {
     width: auto; }
   main .body__sobreNos, main .partituras__cajas {
     margin: 1rem;
-    margin-left: 2rem;
     width: auto; }
   main .body__partituras, main .partituras__form {
     margin-left: 0;
@@ -114,8 +113,7 @@ h3 {
     color: white;
     border: 5px solid white;
     border-style: double;
-    padding: 2rem;
-    margin: 1rem; }
+    padding: 3rem; }
 
 .body__obras {
   background-image: linear-gradient(to right, #181a2b, #234e48); }
