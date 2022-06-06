@@ -26,7 +26,10 @@ footer {
   main .body__sobreNos, main .partituras__cajas {
     margin: 1rem;
     margin-left: 2rem;
-    width: auto; } }
+    width: auto; }
+  main .body__partituras, main .partituras__form {
+    margin-left: 0;
+    margin-right: 0; } }
 
 /* CELULARES */
 @media (min-width: 320px) and (max-width: 540px) {
@@ -91,16 +94,11 @@ h3 {
   .body__sobreNos .SobreNos__row {
     color: white;
     padding: 1rem;
-    margin-top: calc(0 * var(--bs-gutter-y));
-    width: 50vw; }
-  .body__sobreNos .SobreNos__col {
-    margin-left: 2rem;
-    margin-right: 3rem; }
+    margin-top: calc(0 * var(--bs-gutter-y)); }
   .body__sobreNos .SobreNos__explicacion {
     background-color: rgba(152, 190, 185, 0.164);
     color: white;
-    padding: 1rem;
-    margin: 1rem; }
+    padding: 1rem; }
   .body__sobreNos .carousel {
     width: 100%;
     padding: 1rem; }
@@ -109,6 +107,9 @@ h3 {
   background-image: linear-gradient(to left, #181a2b, #234e48, #181a2b); }
   .body__partituras .partituras__txt {
     margin-top: 1rem; }
+  .body__partituras .partituras__form {
+    margin-left: 10vw;
+    margin-right: 10vw; }
   .body__partituras .partituras__cajas {
     color: white;
     border: 5px solid white;

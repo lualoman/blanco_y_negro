@@ -68,19 +68,12 @@ h3 {
                 color: $color-letras;
                 padding: 1rem;
                 margin-top: calc(0 * var(--bs-gutter-y));
-                width: 50vw;
-            }
-
-            &__col {
-                margin-left: 2rem;
-                margin-right: 3rem;
             }
 
             &__explicacion {
                 background-color: $fondo-cajas;
                 color: $color-letras;
                 padding: 1rem;
-                margin: 1rem;
             }
         }
 
@@ -96,6 +89,11 @@ h3 {
         .partituras {
             &__txt {
                 margin-top: 1rem;
+            }
+
+            &__form{
+                margin-left: 10vw;
+                margin-right: 10vw;
             }
 
             &__cajas {
