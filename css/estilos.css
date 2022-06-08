@@ -67,6 +67,9 @@ footer {
 .contenido__fondo {
   background-color: rgba(152, 190, 185, 0.164); }
 
+.ancho__contenido {
+  width: 100%; }
+
 p {
   padding: 1rem;
   color: white; }
@@ -101,7 +104,9 @@ h3 {
   .body__sobreNos .SobreNos__explicacion {
     background-color: rgba(152, 190, 185, 0.164);
     color: white;
-    padding: 1rem; }
+    padding: 1rem;
+    border: 1.5px solid white;
+    border-style: double; }
   .body__sobreNos .carousel {
     width: 100%;
     padding: 1rem; }

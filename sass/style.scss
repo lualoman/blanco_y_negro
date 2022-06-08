@@ -30,6 +30,10 @@
     background-color: $fondo-cajas;
 }
 
+.ancho__contenido {
+    width: 100%;
+}
+
 p {
     padding: 1rem;
     color: $color-letras;
@@ -80,6 +84,8 @@ h3 {
                 background-color: $fondo-cajas;
                 color: $color-letras;
                 padding: 1rem;
+                border: 1.5px $color-bordes-recuadros;
+                border-style: $tipo-bordes-recuadros;
             }
         }
 
